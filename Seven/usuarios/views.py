@@ -5,3 +5,7 @@ from django.template import loader
 def members(request):
     template = loader.get_template('login.html')
     return HttpResponse(template.render())
+
+def registro(request):
+    template = loader.get_template('registro.html')
+    return HttpResponse(template.render())
